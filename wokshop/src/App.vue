@@ -1,18 +1,16 @@
 <template>
   <div id="app">
     <h1>Welcome to the Wok Shop</h1>
-    <Wok wokID="1" />
-    <Wok wokID="2" />
-    <Wok wokID="3" />
+    <WokList/>
   </div>
 </template>
 
 <script>
-    import Wok from './components/Wok'
+    import WokList from './components/WokList'
     export default {
         name: 'App',
         components: {
-            Wok
+            WokList
         }
     }
 </script>

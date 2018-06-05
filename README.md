@@ -1,2 +1,32 @@
-# workshop_vuejs
-A workshop for VueJS/MVVM/VueX etc.
+# VueJS for beginners
+
+## Toolchain
+### Required software
+- npm 6.1.0
+
+### vue-cli
+```
+# install vue-cli
+npm install -g @vue/cli
+
+# create the project (choose "default" and then "NPM")
+vue create wokshop
+
+npm run serve
+```
+
+## What have we got so far
+
+
+## Model View ViewModel (MVVM)
+
+## One way databinding
+
+## Event driven
+
+## Rendering process
+
+## Declarative/Reactive
+
+
+ 

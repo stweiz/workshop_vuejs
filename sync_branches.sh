@@ -6,9 +6,9 @@ for branch in "${branches[@]}"; do
   echo $branch
   if [[ "${branch}" != "refs/heads/master" ]]; then
     echo processing branch $branch
-    git checkout ${branch}
-    git checkout master -- README.md
-    git commit -m "sync README.md from master"
+    echo git checkout ${branch}
+    echo git checkout master -- README.md
+    echo git commit -m "sync README.md from master"
   fi
 done
 

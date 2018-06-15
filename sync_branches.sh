@@ -6,9 +6,9 @@ for branch in "${branches[@]}"; do
   BRANCHSHORT=$(echo $branch | awk -F"/" '{print $3}')
   if [[ "${BRANCHSHORT}" != "master" ]]; then
     echo processing branch $BRANCHSHORT
-    echo git checkout $BRANCHSHORT
-    echo git checkout master -- README.md
-    echo git commit -m "sync README.md from master"
+    git checkout $BRANCHSHORT
+    git checkout master -- README.md
+    git commit -m "sync README.md from master"
   fi
 done
 

@@ -9,7 +9,7 @@
 # install vue-cli
 sudo npm install -g @vue/cli
 
-# create the project (choose "default" and then "NPM")
+# to initially create the project (choose "default" and then "NPM")
 vue create wokshop
 
 npm run serve

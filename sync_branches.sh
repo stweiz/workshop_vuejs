@@ -3,8 +3,7 @@ branches=()
 
 eval "$(git for-each-ref --shell --format='branches+=(%(refname))' refs/heads/)"
 for branch in "${branches[@]}"; do
-  echo $branch
-  BRANCHSHORT=$(awk -F"/" '{print $3}')
+  BRANCHSHORT=$(echo $branch | awk -F"/" '{print $3}')
   if [[ "${BRANCHSHORT}" != "master" ]]; then
     echo processing branch $BRANCHSHORT
     echo git checkout $BRANCHSHORT

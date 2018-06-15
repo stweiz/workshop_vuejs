@@ -12,4 +12,4 @@ for branch in "${branches[@]}"; do
   fi
 done
 
-#git checkout master
+git checkout master

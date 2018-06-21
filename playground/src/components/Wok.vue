@@ -3,7 +3,6 @@
       {{this.wok.name}}<br/>
       ID: {{this.wok.id}}<br/>
       {{this.wok.price}}
-
   </div>
 </template>
 

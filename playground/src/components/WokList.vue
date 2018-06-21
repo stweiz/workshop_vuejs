@@ -1,9 +1,12 @@
 <template>
     <div class="wokList">
         <h2>This is the list of available woks:</h2>
-        <Wok v-for="wok in wokList"
-             v-bind:key="wok.id"
-             v-bind:wok="wok"/>
+        <ul class="wok-list">
+           <li v-for="wok in wokList" v-bind:key="wok.id">
+               <Wok v-bind:wok="wok"/>
+           </li>
+        </ul>
+        <br style="clear: both"/>
     </div>
 </template>
 
@@ -28,6 +31,12 @@
 </script>
 
 <style scoped>
-    .wokList {
+    ul {
+        list-style: none;
+    }
+    li {
+        float: left;
+        border: 1px solid blue;
+        padding: 10px;
     }
 </style>

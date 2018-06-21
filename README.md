@@ -2,16 +2,30 @@
 
 ## Toolchain
 ### Required software
-- npm 6.1.0
 
-### vue-cli
+#### node.js package manager (npm)
+(We used version 6.x during the creation of this workshop)
 ```
-# install vue-cli
+# i.e. on Arch linux
+sudo pacman -S npm
+
+# Debian/Ubuntu etc.
+sudo apt-get install npm
+```
+
+#### vue.js command line tools (vue-cli)
+```
+# Privileges needed because of global install (-g)
 sudo npm install -g @vue/cli
+```
+
+## Getting started
 
 # to initially create the project (choose "default" and then "NPM")
-vue create wokshop
+vue create playground
 
+# to start the development server
+cd playground
 npm run serve
 ```
 

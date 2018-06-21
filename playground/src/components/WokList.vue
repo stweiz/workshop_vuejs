@@ -1,5 +1,5 @@
 <template>
-    <div class="wokList">
+    <div>
         <h2>This is the list of available woks:</h2>
         <ul class="wok-list">
            <li v-for="wok in wokList" v-bind:key="wok.id">
@@ -21,10 +21,10 @@
         data() {
             return {
                 wokList: [
-                    {id: 1, name: "Standard Wok", price: "20.00"},
-                    {id: 2, name: "De Luxe Wok", price: "30.00"},
-                    {id: 3, name: "Billigwok", price: "10.00"},
-                    {id: 4, name: "Wok Besteckset", price: "15.00"}
+                    {id: 1, name: "Standard Wok", price: 20.0},
+                    {id: 2, name: "De Luxe Wok", price: 30.0},
+                    {id: 3, name: "Billigwok", price: 10.0},
+                    {id: 4, name: "Wok Besteckset", price: 15.0}
                 ]
             }
         }

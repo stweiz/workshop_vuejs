@@ -3,17 +3,19 @@
       <h2>This is your shopping cart:</h2>
       <ul class="shopping-cart-list">
           <ShoppingCartItem
-                  v-for="(item, index) in basket"
+                  v-for="(cartItem, index) in basket"
                   :key="index"
-                  :item="item"
+                  :cartItem="cartItem"
           />
       </ul>
-    Your shopping cart is empty.
+      Total: {{ total | currency }}
+      <button v-on:click="emptyCart">Empty cart</button>
   </div>
 </template>
 
 <script>
     import ShoppingCartItem from './ShoppingCartItem.vue'
+    import currency from '../filters/currency'
 
     export default {
         name: 'ShoppingCart',
@@ -21,8 +23,17 @@
         computed: {
             basket() {
                 return this.$store.state.basket
+            },
+            total() {
+                return this.$store.getters.basketTotal
             }
-        }
+        },
+        methods: {
+            emptyCart: function (event) {
+                this.$store.dispatch('removeAllItems', this.wok)
+            }
+        },
+        filters: {currency}
     }
 </script>
 

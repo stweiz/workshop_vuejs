@@ -22,15 +22,22 @@ sudo npm install -g @vue/cli
 ## Getting started
 
 # to initially create the project (choose "default" and then "NPM")
+```
 vue create playground
+npm install --save vuex bootstrap-vue
+```
 
 # to start the development server
+```
 cd playground
 npm run serve
 ```
 
-## What have we got so far
+## Used technologies in this demostration
 
+ - vue.js
+ - vuex
+ - bootstrap 4 
 
 ## Model View ViewModel (MVVM)
 

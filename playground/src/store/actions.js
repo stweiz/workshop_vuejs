@@ -1,13 +1,10 @@
 export default {
     addItem ({ commit }, item) {
-        commit('addItem', {
-            item,
-            done: false
-        })
+        commit('addItem', item)
     },
 
-    removeItem ({ commit }, item) {
-        commit('removeItem', item)
+    removeBasketPosition ({ commit }, itemId) {
+        commit('removeBasketPosition', itemId)
     },
 
     removeAllItems ({commit}) {

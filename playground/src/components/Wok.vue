@@ -1,28 +1,37 @@
 <template>
-  <div class="wok">
-      {{this.wok.name}}<br/>
-      ID: {{this.wok.id}}<br/>
-      {{this.wok.price}}
-  </div>
+    <b-container class="wok">
+        <b-row>
+            <b>{{this.wok.name}}</b>
+        </b-row>
+        <b-row>
+            ID: {{this.wok.id}}
+        </b-row>
+        <b-row align-h="end">
+            EUR {{this.wok.price | currency}}
+        </b-row>
+        <b-row align-h="end" align-v="end">
+            <button v-on:click="addToCart"><font-awesome-icon icon="shopping-cart"/></button>
+        </b-row>
+    </b-container>
 </template>
 
 <script>
-  export default {
-    name: 'Wok',
-    props: ['wok']
-  }
+    import currency from '../filters/currency'
+
+    export default {
+        name: 'Wok',
+        props: ['wok'],
+        methods: {
+            addToCart: function (event) {
+                this.$store.dispatch('addItem', this.wok)
+            }
+        },
+        filters: {currency}
+    }
 </script>
 
 <style scoped>
-  .wok {
-      padding: 10px;
-      color: white;
-      background-color: darkgreen;
-      font-size: 20px;
-      font-weight: bold;
-      border: 1px solid black;
-      width: 150px;
-      height: 150px;
-      margin-bottom: 10px;
-  }
+    .wok {
+
+    }
 </style>

@@ -5,7 +5,6 @@
 </template>
 
 <script>
-    import ShoppingCartItem from './ShoppingCartItem.vue'
     import currency from '../filters/currency'
 
     export default {

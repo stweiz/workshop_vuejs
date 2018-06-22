@@ -1,7 +1,6 @@
 <template>
     <div id="app">
         <Navigation/>
-        <h1>Welcome to the VueJS Wok-Shop</h1>
         <WokList/>
         <ShoppingCart/>
     </div>

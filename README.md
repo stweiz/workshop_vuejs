@@ -33,7 +33,7 @@ cd playground
 npm run serve
 ```
 
-## Used technologies in this demostration
+## Used technologies in this demonstration
 
  - vue.js
  - vuex

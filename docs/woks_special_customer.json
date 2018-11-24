@@ -1,0 +1,19 @@
+{
+  "woks": [
+    {
+      "id": 1,
+      "name": "Iron Wok",
+      "price": 100.0
+    },
+    {
+      "id": 2,
+      "name": "Gold Wok",
+      "price": 1000.0
+    },
+    {
+      "id": 3,
+      "name": "Platin Wok",
+      "price": 5000.0
+    }
+  ]
+}

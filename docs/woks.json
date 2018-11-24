@@ -1,0 +1,24 @@
+{
+  "woks": [
+    {
+      "id": 1,
+      "name": "Standard Wok",
+      "price": 20.0
+    },
+    {
+      "id": 2,
+      "name": "De Luxe Wok",
+      "price": 30.0
+    },
+    {
+      "id": 3,
+      "name": "Billigwok",
+      "price": 10.0
+    },
+    {
+      "id": 4,
+      "name": "Wok Besteckset",
+      "price": 15.0
+    }
+  ]
+}

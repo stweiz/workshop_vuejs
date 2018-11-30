@@ -24,7 +24,11 @@ sudo npm install -g @vue/cli
 # to initially create the project (choose "default" and then "NPM")
 ```
 vue create playground
-npm install --save vuex bootstrap-vue
+```
+
+# install dependencies
+```
+npm install --save vuex bootstrap-vue (TODO vuerouter also?)
 ```
 
 # to start the development server
@@ -35,8 +39,9 @@ npm run serve
 
 ## Used technologies in this demonstration
 
- - vue.js
- - vuex
+ - Vue.js
+ - Vuex
+ - Vue Router
  - bootstrap 4 
 
 ## Model View ViewModel (MVVM)
@@ -48,6 +53,3 @@ npm run serve
 ## Rendering process
 
 ## Declarative/Reactive
-
-
- 

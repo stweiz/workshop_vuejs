@@ -11,11 +11,11 @@
             </ul>
         </b-row>
         <b-row>
-            <b-col cols="2">
-                <button v-on:click="getWokListStandard">getWokListStandard</button>
+            <b-col cols="4">
+                <button v-on:click="getWokListStandard">Woks</button>
             </b-col>
-            <b-col cols="2">
-                <button v-on:click="getWokListSpecialCustomer">getWokListSpecialCustomer</button>
+            <b-col cols="4">
+                <button v-on:click="getWokListSpecialCustomer">Woks for special customer</button>
             </b-col>
         </b-row>
     </b-container>

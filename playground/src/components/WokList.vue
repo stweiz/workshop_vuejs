@@ -1,16 +1,24 @@
 <template>
-    <div>
-        <h2>This is the list of available woks:</h2>
-        <ul class="wok-list">
-            <li v-for="wok in wokList" v-bind:key="wok.id">
-                <Wok v-bind:wok="wok"/>
-            </li>
-        </ul>
-        <br style="clear: both"/>
-        <button v-on:click="getWokListStandard">getWokListStandard</button>
-        <br>
-        <button v-on:click="getWokListSpecialCustomer">getWokListSpecialCustomer</button>
-    </div>
+    <b-container>
+        <b-col><h2>This is the list of available woks:</h2></b-col>
+        <b-row>
+            <ul>
+                <b-col cols="10">
+                    <li v-for="wok in wokList" v-bind:key="wok.id">
+                        <Wok v-bind:wok="wok"/>
+                    </li>
+                </b-col>
+            </ul>
+        </b-row>
+        <b-row>
+            <b-col cols="2">
+                <button v-on:click="getWokListStandard">getWokListStandard</button>
+            </b-col>
+            <b-col cols="2">
+                <button v-on:click="getWokListSpecialCustomer">getWokListSpecialCustomer</button>
+            </b-col>
+        </b-row>
+    </b-container>
 </template>
 
 <script>

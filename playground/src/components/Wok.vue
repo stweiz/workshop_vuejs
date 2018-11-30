@@ -31,7 +31,4 @@
 </script>
 
 <style scoped>
-    .wok {
-
-    }
 </style>

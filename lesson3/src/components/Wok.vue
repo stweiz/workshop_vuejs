@@ -1,26 +1,33 @@
 <template>
-  <div class="wok">
-      WOK<br/>
-      ID: {{this.wokID}}
-  </div>
+    <div>
+        <div class="wok">
+            {{this.standardWok.name}}<br/>
+            ID: {{this.standardWok.id}}<br/>
+            {{this.standardWok.price}}
+        </div>
+    </div>
 </template>
 
 <script>
-  export default {
-    name: 'Wok',
-    props: ['wokID']
-  }
+    export default {
+        data() {
+            return {
+                standardWok: {id: 1, name: "Standard Wok", price: "€20.00"}
+            }
+        }
+    }
 </script>
 
 <style scoped>
-  .wok {
-      color: white;
-      background-color: darkgreen;
-      font-size: 20px;
-      font-weight: bold;
-      border: 1px solid black;
-      width: 200px;
-      height: 200px;
-      margin-bottom: 10px;
-  }
+    .wok {
+        padding: 10px;
+        color: white;
+        background-color: darkgreen;
+        font-size: 20px;
+        font-weight: bold;
+        border: 1px solid black;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+    }
 </style>

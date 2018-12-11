@@ -10,6 +10,13 @@
             <p>ID: {{invisibleWok.id}}</p>
             <p>{{invisibleWok.price}}</p>
         </div>
+        <!-- TODO solution: else-if
+                <div class="wok" v-else-if="elseIfWok.visible">
+                    <p>{{elseIfWok.name}}</p>
+                    <p>ID: {{elseIfWok.id}}</p>
+                    <span>{{elseIfWok.price}}</span>
+                </div>
+        -->
     </div>
 </template>
 
@@ -19,6 +26,11 @@
             return {
                 standardWok: {id: 1, name: "Standard Wok", price: "€20.00"},
                 invisibleWok: {id: 2, name: "Invisible Wok", price: "€30.00", visible: false} <!-- Set visible: true, when you add your elseIfWok -->
+                /* TODO solution: else-if
+                    standardWok: {id: 1, name: "Standard Wok", price: "€20.00"},
+                    invisibleWok: {id: 2, name: "Invisible Wok", price: "€30.00", visible: true},
+                    elseIfWok: {id: 3, name: "Else-If Wok", price: "€40.00", visible: true}
+                */
             }
         }
     }

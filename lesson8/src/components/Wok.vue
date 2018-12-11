@@ -9,6 +9,9 @@
         <br>
         <br>
         <p>Calculate 10+20 with a computed function:</p>
+        <!-- TODO solution: computed sum calculation
+                <p>{{varX}}+{{varY}}={{calculateSum}}</p>
+        -->
     </div>
 </template>
 
@@ -24,7 +27,15 @@
         computed: {
             reverseMessage: function () {
                 return this.message.split('').reverse().join('')
-            }
+            },
+            /* TODO solution: computed sum calculation
+                reverseMessage: function () {
+                    return this.message.split('').reverse().join('')
+                },
+                calculateSum: function () {
+                    return parseInt(this.varX) + parseInt(this.varY)
+                }
+            */
         }
     }
 </script>

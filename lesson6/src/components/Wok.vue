@@ -2,13 +2,13 @@
     <div>
         <div class="wok">
             <p>{{standardWok.name}}</p>
-            <p v-bind:title="standardWok.id"></p>
-            <span v-bind:title="standardWok.price"></span>
+            <p v-html="standardWok.id"></p> <!-- Instead of mustache, we can also use the v-html directive -->
+            <span v-html="standardWok.price"></span>
         </div>
-        <div class="wok" v-if="invisibleWok.visible">
+        <div class="wok" v-if="!invisibleWok.visible">
             <p>{{invisibleWok.name}}</p>
             <p>ID: {{invisibleWok.id}}</p>
-            <span v-bind:title="invisibleWok.price"></span>
+            <p>{{invisibleWok.price}}</p>
         </div>
     </div>
 </template>

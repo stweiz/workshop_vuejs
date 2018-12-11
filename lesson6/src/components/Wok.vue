@@ -5,7 +5,7 @@
             <p v-html="standardWok.id"></p> <!-- Instead of mustache, we can also use the v-html directive -->
             <span v-html="standardWok.price"></span>
         </div>
-        <div class="wok" v-if="!invisibleWok.visible">
+        <div class="wok" v-if="invisibleWok.visible">
             <p>{{invisibleWok.name}}</p>
             <p>ID: {{invisibleWok.id}}</p>
             <p>{{invisibleWok.price}}</p>

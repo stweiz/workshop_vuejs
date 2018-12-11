@@ -3,3 +3,5 @@ node_modules
 wokshop
 lesson10/dist
 lesson10/node_modules
+playground/dist
+playground/node_modules

@@ -24,7 +24,7 @@
         name: 'Wok',
         props: ['wok'],
         methods: {
-            addToCart: function (event) {
+            addToCart: function () {
                 this.$store.dispatch('addItem', this.wok)
             }
         },

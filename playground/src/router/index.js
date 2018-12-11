@@ -14,13 +14,13 @@ const routes = [
     {path: '/cart', component: ShoppingCart},
 ];
 
-// TODO Präsentation Vue Router can also work with wildcards and params:
+// Vue Router can also work with wildcards and params:
 //const routes = [
 //    { path: '/wo*', component: woks },
 //    { path: '/ca*/:userid', component: cart },
 //];
-// TODO Präsentation Vue Router also has different transition effects, and HTML5 history mode or hash mode, with auto-fallback in IE9
+// Vue Router also has different transition effects, and HTML5 history mode or hash mode, with auto-fallback in IE9
 
 export default new VueRouter({
-    routes: routes // TODO routes geht auch
+    routes: routes // "routes" instead of "routes: routes" also works
 })

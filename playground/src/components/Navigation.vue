@@ -1,7 +1,10 @@
 <template>
     <div>
         <b-navbar toggleable="md" type="dark" variant="info">
-            <router-link to="/" tag="b-navbar-brand"><font-awesome-icon icon="grin-tongue-wink" /> WokShop</router-link>
+            <router-link to="/" tag="b-navbar-brand">
+                <font-awesome-icon icon="grin-tongue-wink"/>
+                WokShop
+            </router-link>
 
             <b-collapse is-nav id="nav_collapse">
                 <b-navbar-nav>
@@ -12,7 +15,9 @@
                     <router-link to="/cart">Go to cart</router-link>
                 </b-navbar-nav>
                 <b-navbar-nav class="ml-auto">
-                    <router-link to="/cart" tag="b-nav-item"><ShoppingCartSmall/></router-link>
+                    <router-link to="/cart" tag="b-nav-item">
+                        <ShoppingCartSmall/>
+                    </router-link>
                     <!-- TODO <b-nav-item href="#"><font-awesome-icon icon="question-circle" /></b-nav-item> -->
                 </b-navbar-nav>
             </b-collapse>

@@ -1,7 +1,8 @@
 <template>
-  <div>
-      <font-awesome-icon icon="shopping-cart"/> {{ total | currency }}
-  </div>
+    <div>
+        <font-awesome-icon icon="shopping-cart"/>
+        {{ total | currency }}
+    </div>
 </template>
 
 <script>

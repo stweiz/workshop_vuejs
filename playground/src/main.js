@@ -12,9 +12,10 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 Vue.use(BootstrapVue);
 
 // some neat icons for buttons etc
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faGrinTongueWink, faQuestionCircle, faShoppingCart, faTimes } from '@fortawesome/free-solid-svg-icons'
+import {library} from '@fortawesome/fontawesome-svg-core'
+import {FontAwesomeIcon} from '@fortawesome/vue-fontawesome'
+import {faGrinTongueWink, faQuestionCircle, faShoppingCart, faTimes} from '@fortawesome/free-solid-svg-icons'
+
 library.add(faGrinTongueWink, faQuestionCircle, faShoppingCart, faTimes);
 // Components must also be added, before Vue instance is initialized with "new"
 Vue.component('font-awesome-icon', FontAwesomeIcon);

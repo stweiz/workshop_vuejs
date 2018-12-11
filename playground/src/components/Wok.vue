@@ -10,7 +10,9 @@
             EUR {{this.wok.price | currency}}
         </b-row>
         <b-row align-h="end" align-v="end">
-            <button v-on:click="addToCart"><font-awesome-icon icon="shopping-cart"/></button>
+            <button v-on:click="addToCart">
+                <font-awesome-icon icon="shopping-cart"/>
+            </button>
         </b-row>
     </b-container>
 </template>

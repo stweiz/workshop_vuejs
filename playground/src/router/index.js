@@ -10,8 +10,8 @@ Vue.use(VueRouter);
 
 // Route definitions with which component should be loaded on the called route
 const routes = [
-    { path: '/woks', component: WokList },
-    { path: '/cart', component: ShoppingCart },
+    {path: '/woks', component: WokList},
+    {path: '/cart', component: ShoppingCart},
 ];
 
 // TODO Präsentation Vue Router can also work with wildcards and params:

@@ -14,7 +14,7 @@
         data() {
             return {
                 standardWok: {id: 1, name: "Standard Wok", price: "€20.00"}
-                <!-- TODO Create second wok -->
+                // TODO Create second wok
             }
         }
     }

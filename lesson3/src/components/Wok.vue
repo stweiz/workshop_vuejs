@@ -5,6 +5,7 @@
             ID: {{this.standardWok.id}}<br/>
             {{this.standardWok.price}}
         </div>
+        <!-- TODO Create second wok -->
     </div>
 </template>
 
@@ -13,6 +14,7 @@
         data() {
             return {
                 standardWok: {id: 1, name: "Standard Wok", price: "€20.00"}
+                <!-- TODO Create second wok -->
             }
         }
     }

@@ -2,6 +2,9 @@
     <div>
         <input v-model="message">
         <button v-on:click="reverseMessage">Reverse message in input</button>
+
+        <!-- TODO: If a new button is clicked, calculate a sum of two variables, which a user entered in two input fields and show the result in a new span. -->
+
     </div>
 </template>
 

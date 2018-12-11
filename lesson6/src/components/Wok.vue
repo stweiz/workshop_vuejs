@@ -18,7 +18,7 @@
         data() {
             return {
                 standardWok: {id: 1, name: "Standard Wok", price: "€20.00"},
-                invisibleWok: {id: 2, name: "Invisible Wok", price: "€30.00", visible: false} <!-- Set visible: true, when you add your elseIfWok -->
+                invisibleWok: {id: 2, name: "Invisible Wok", price: "€30.00", visible: false} // Set visible: true, when you add your elseIfWok
             }
         }
     }

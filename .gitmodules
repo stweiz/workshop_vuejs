@@ -1,3 +1,3 @@
 [submodule "presentation"]
 	path = presentation
-	url = git@github.com:tarent/workshop_vuejs_presentation.git
+	url = git@github.com:stweiz/workshop_vuejs_presentation.git

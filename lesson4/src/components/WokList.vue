@@ -4,7 +4,7 @@
         <Wok v-for="wok in wokList"
              v-bind:key="wok.id"
              v-bind:wok="wok"/>
-        <!-- In lesson3 we had to add each new Wok as new HTML element. Annoying, not? Now we iterated over a list -->
+        <!-- In lesson3 we had to add each new Wok as a new HTML element. Annoying, not? Now we iterate over a list -->
     </div>
 </template>
 

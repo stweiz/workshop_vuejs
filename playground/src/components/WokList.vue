@@ -44,13 +44,16 @@
             })
         },
         methods: {
+            // JSON.get() doesn't work, because it binds to the parent scope implicitly and this doesn't work in ES6/2015
             getWokListStandard: function () {
+                // Use the imported library and call its function to get a JSON by a HTTP request
                 axios.get(wokJsonUrl).then((response) => {
                     this.wokList = response.data["woks"]
                 })
             },
             getWokListSpecialCustomer: function () {
-                axios.get(specialCustomerWokJsonUrl).then((response) => {
+                // Or make axios available in your global Vue.js scope by adding it to the "Vue.prototype" in the main.js
+                this.$http.get(specialCustomerWokJsonUrl).then((response) => {
                     this.wokList = response.data["woks"]
                 })
             }

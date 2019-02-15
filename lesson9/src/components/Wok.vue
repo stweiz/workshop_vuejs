@@ -18,7 +18,7 @@
         },
         methods: {
             changeChangeable: function () {
-                this.change = "This is changed"
+                this.change = "This has changed"
             },
             changeNotChangeable: function () {
                 this.noChange = "This can't be changed"

@@ -23,7 +23,6 @@
 
 <script>
     import Wok from './Wok'
-    import axios from 'axios'
 
     const wokJsonUrl = "https://raw.githubusercontent.com/stweiz/workshop_vuejs/master/docs/woks.json";
     const specialCustomerWokJsonUrl = "https://raw.githubusercontent.com/stweiz/workshop_vuejs/master/docs/woks_special_customer.json";
@@ -39,7 +38,7 @@
             }
         },
         created() {
-            axios.get(wokJsonUrl).then((response) => {
+            this.axios.get(wokJsonUrl).then((response) => {
                 this.wokList = response.data["woks"]
             })
         },
@@ -47,7 +46,7 @@
             // JSON.get() doesn't work, because it binds to the parent scope implicitly and this doesn't work in ES6/2015
             getWokListStandard: function () {
                 // Use the imported library and call its function to get a JSON by a HTTP request
-                axios.get(wokJsonUrl).then((response) => {
+                this.axios.get(wokJsonUrl).then((response) => {
                     this.wokList = response.data["woks"]
                 })
             },

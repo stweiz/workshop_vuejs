@@ -1,10 +1,5 @@
 export const STORAGE_KEY = 'vuejs-workshop'
 
-// for testing
-if (navigator.userAgent.indexOf('PhantomJS') > -1) {
-    window.localStorage.clear()
-}
-
 export const mutations = {
     addItem(state, item) {
         const found = state.basket.some(cartItem => {
@@ -19,11 +14,22 @@ export const mutations = {
         })
     },
 
-    removeBasketPosition(state, itemId) {
+    removeItemAmount(state, params) {
+        const quantity = params.quantity;
+        const cartItemIdToRemove = params.itemId;
+
         state.basket.some(cartItem => {
-            if (cartItem.item.id === itemId) {
-                state.basket.splice(state.basket.indexOf(cartItem), 1)
-                return
+            const currentCartItemId = cartItem.item.id;
+            const currentCartItemAmount = cartItem.amount;
+
+            if (currentCartItemId === cartItemIdToRemove) {
+                if (quantity > 0) {
+                    if (currentCartItemAmount > quantity) {
+                        cartItem.amount = currentCartItemAmount - quantity;
+                    } else {
+                        state.basket.splice(state.basket.indexOf(cartItem), 1)
+                    }
+                }
             }
         })
     },

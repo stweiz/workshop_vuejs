@@ -3,8 +3,8 @@ export default {
         commit('addItem', item)
     },
 
-    removeBasketPosition({commit}, itemId) {
-        commit('removeBasketPosition', itemId)
+    removeItemAmount({commit}, itemId, quantity) {
+        commit('removeItemAmount', itemId, quantity)
     },
 
     removeAllItems({commit}) {

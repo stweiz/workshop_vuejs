@@ -1,10 +1,14 @@
 <template>
     <b-row class="shopping-cart-item">
-        <b-col cols="6"><p>{{ cartItem.amount }}x {{ cartItem.item.name }} à {{ cartItem.item.price | currency }} </p></b-col>
-        <b-col cols="2">
-            <button class="shopping-cart-item-remove" v-on:click="remove">
+        <b-col cols="8"><p>{{ cartItem.amount }}x {{ cartItem.item.name }} à {{ cartItem.item.price | currency }} </p></b-col>
+        <b-col cols="4">
+            <label title="quantityToRemove">Amount of items
+                <input type="number" id="test" name="quantityToRemove" min="0" :max="cartItem.amount" v-model="amountToRemove">
+                <button class="shopping-cart-item-remove" v-on:click="removeItemByQuantity">
                 <font-awesome-icon icon="times"/>
-            </button>
+                </button>
+            </label>
+
         </b-col>
     </b-row>
 </template>
@@ -15,10 +19,16 @@
     export default {
         name: 'ShoppingCartItem',
         props: ['cartItem'],
+        data() {
+            return {
+                amountToRemove: 0
+            }
+        },
         filters: {currency},
         methods: {
-            remove: function () {
-                this.$store.dispatch('removeBasketPosition', this.cartItem.item.id)
+            removeItemByQuantity: function () {
+                this.$store.dispatch('removeItemAmount', {itemId: this.cartItem.item.id, quantity: this.amountToRemove})
+                this.amountToRemove = 0
             }
         },
     }

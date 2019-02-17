@@ -5,13 +5,12 @@
             ID: {{this.standardWok.id}}<br/>
             {{this.standardWok.price}}
         </div>
-        <!-- TODO solution: Create second wok
+        <!-- TODO solution: Create second wok -->
                 <div class="wok">
                     {{this.premiumWok.name}}<br/>
                     ID: {{this.premiumWok.id}}<br/>
                     {{this.premiumWok.price}}
                 </div>
-        -->
     </div>
 </template>
 
@@ -19,11 +18,10 @@
     export default {
         data() {
             return {
-                standardWok: {id: 1, name: "Standard Wok", price: "€20.00"}
-                /* TODO solution: Create second wok
+                /* TODO solution: Create second wok */
                     standardWok: {id: 1, name: "Standard Wok", price: "€20.00"},
                     premiumWok: {id: 2, name: "Premium Wok", price: "€200.00"}
-                */
+
             }
         }
     }

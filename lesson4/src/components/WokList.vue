@@ -19,14 +19,11 @@
         data() {
             return {
                 wokList: [
-                    {id: 1, name: "Standard Wok", price: "€20.00"},
-                    {id: 2, name: "De Luxe Wok", price: "€30.00"}
-                    /* TODO solution: Add more Woks.
+                    /* TODO solution: Add more Woks. */
                         {id: 1, name: "Standard Wok", price: "€20.00"},
                         {id: 2, name: "De Luxe Wok", price: "€30.00"},
                         {id: 3, name: "Iron Wok", price: "€80.00"},
                         {id: 4, name: "Gold Wok", price: "€300.00"},
-                    */
                 ]
             }
         }

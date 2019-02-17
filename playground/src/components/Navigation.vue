@@ -12,6 +12,7 @@
                     <router-link to="/cart" tag="b-nav-item">Go to cart</router-link>-->
                     <!-- TODO tag="b-nav-item" macht den Router kaputt -->
                     <router-link to="/woks">Hot woks</router-link>
+                    <router-link to="/spoons">Spoons</router-link>
                     <router-link to="/cart">Go to cart</router-link>
                 </b-navbar-nav>
                 <b-navbar-nav class="ml-auto">

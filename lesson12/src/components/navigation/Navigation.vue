@@ -9,6 +9,9 @@
                 <b-navbar-nav>
                     <b-nav-item><router-link to="/woks">Hot woks</router-link></b-nav-item> <!-- <router-link tag="b-nav-item" macht den Router kaputt -->
                 </b-navbar-nav>
+                <b-navbar-nav>
+                    <b-nav-item><router-link to="/spoons">Spoons</router-link></b-nav-item>
+                </b-navbar-nav>
             </b-collapse>
         </b-navbar>
     </div>

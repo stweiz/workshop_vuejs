@@ -11,8 +11,9 @@
                     <!--<router-link to="/woks" tag="b-nav-item">Hot woks</router-link>
                     <router-link to="/cart" tag="b-nav-item">Go to cart</router-link>-->
                     <!-- TODO tag="b-nav-item" macht den Router kaputt -->
-                    <router-link to="/woks">Hot woks</router-link>
-                    <router-link to="/cart">Go to cart</router-link>
+                    <b-nav-item><router-link to="/woks">Hot woks</router-link></b-nav-item>
+                    <b-nav-item><router-link to="/spoons">Spoons</router-link></b-nav-item>
+                    <b-nav-item><router-link to="/cart">Go to cart</router-link></b-nav-item>
                 </b-navbar-nav>
                 <b-navbar-nav class="ml-auto">
                     <router-link to="/cart" tag="b-nav-item">

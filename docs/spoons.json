@@ -1,0 +1,22 @@
+{
+  "spoons": [
+    {
+      "id": 8,
+      "name": "Aluminium Spoon",
+      "material": "Aluminium",
+      "price": 4.0
+    },
+    {
+      "id": 9,
+      "name": "Olive Wooden Spoon",
+      "material": "Olive Wood",
+      "price": 8.0
+    },
+    {
+      "id": 10,
+      "name": "Adamantium Spoon",
+      "material": "Adamantium Wood",
+      "price": 3000.5
+    }
+  ]
+}

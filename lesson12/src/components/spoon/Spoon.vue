@@ -16,7 +16,10 @@
 </template>
 
 <script>
-
+    export default {
+        name: 'Spoon',
+        props: ['spoon']
+    }
 </script>
 
 <style scoped>

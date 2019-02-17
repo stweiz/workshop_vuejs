@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 // Our components for Vue Router
 import WokList from "../../components/wok/WokList";
+import SpoonList from "../../../../wokshop/src/components/spoon/SpoonList";
 
 // Use plugin "VueRouter"
 // Define it in the plugin instance configuration, so the "main.js" is smaller
@@ -11,6 +12,7 @@ Vue.use(VueRouter);
 // Route definitions with which component should be loaded on the called route
 const routes = [
     {path: '/woks', component: WokList},
+    {path: '/spoons', component: SpoonList},
 ];
 
 // Vue Router can also work with wildcards and params:

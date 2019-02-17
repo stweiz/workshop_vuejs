@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+// JSON.get() doesn't work, because it binds to the parent scope implicitly and this fails in ECMAScript
 // (Method 1 & 2) Needed by VueAxios, or if you want to make axios in your whole Vue application available
 import axios from 'axios'
 // (Method 1) Wrapper for axios
